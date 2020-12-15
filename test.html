@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <button class="btn">Save</button>
+
+
+<p>Display some text when the checkbox is checked:</p>
+
+<label for="garment">Checkbox:</label> 
+<input type="checkbox" id="garment" name="garment" value=6 onclick="myFunction()">
+<label for="garment">Checkbox:</label> 
+<input type="checkbox" id="garment" name="garment" value=6 onclick="myFunction()">
+<label for="garment">Checkbox:</label> 
+<input type="checkbox" id="garment" name="garment" value=6 onclick="myFunction()">
+<label for="garment">Checkbox:</label> 
+<input type="checkbox" id="garment" name="garment" value=6 onclick="myFunction()">
+<label for="garment">Checkbox:</label> 
+<input type="checkbox" id="garment" name="garment" value=6 onclick="myFunction()">
+
+
+
+<p id="text" style="display:none">Checkbox is CHECKED!</p>
+
+<script>
+function myFunction() {
+  var checkBox = document.getElementsByName("garment");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
